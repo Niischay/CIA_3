@@ -1,0 +1,130 @@
+/* General Styles */
+* {
+ box-sizing: border-box;
+padding: 0;
+ margin: 0;
+  font-family: 'Poppins', sans-serif;
+    }
+    
+    body {
+background: linear-gradient(135deg, #f9f9f9 25%, #f2f2f2 75%);
+ color: #333;
+  font-size: 16px;
+    }
+    
+    header {
+  display: flex;
+    justify-content: space-between;
+     padding: 20px 50px;
+    background: #1abc9c;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+     position: sticky;
+    top: 0;
+   z-index: 100;
+    }
+    
+    .logo {
+     font-size: 28px;
+    font-weight: bold;
+    color: white;
+     text-transform: uppercase;
+    }
+    
+    nav a {
+     margin-left: 30px;
+     text-decoration: none;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    }
+    
+    nav a:hover {
+   color: #333;
+    }
+    
+    /* Product Details Page Styles */
+    .product-details {
+    display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 50px;
+    max-width: 1000px;
+    margin: 50px auto;
+     background-color: #fff;
+     border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .product-details img {
+     width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+     margin-right: 50px;
+    }
+    
+    .product-details .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    
+    .product-details .info h2 {
+    font-size: 32px;
+     color: #2c3e50;
+     margin-bottom: 20px;
+    }
+    
+    .product-details .info p {
+    font-size: 18px;
+    color: #7f8c8d;
+     margin-bottom: 10px;
+    }
+    
+    .product-details .info p.price {
+    font-size: 24px;
+   color: #e74c3c;
+   margin-bottom: 20px;
+   font-weight: bold;
+    }
+    
+    .product-details .info button {
+    margin-top: 20px;
+     padding: 15px 40px;
+    background-color: #3498db;
+     color: white;
+     border: none;
+     border-radius: 30px;
+     font-size: 16px;
+     font-weight: 600;
+    cursor: pointer;
+     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .product-details .info button:hover {
+    background-color: #1abc9c;
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    
+    .product-details .info a {
+    margin-top: 10px;
+   padding: 12px 25px;
+     background-color: white;
+    color: #3498db;
+     border: 1px solid #3498db;
+     border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+     font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .product-details .info a:hover {
+   background-color: #3498db;
+    color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    

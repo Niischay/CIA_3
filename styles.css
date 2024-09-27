@@ -1,0 +1,177 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f9f9f9 25%, #f2f2f2 75%);
+    color: #333;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: #1abc9c;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #333;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ensures 3 columns with auto-fill */
+    gap: 30px; /* Space between grid items */
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto; /* Centers items in grid */
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%; /* Expands to fill the grid cell */
+    max-width: 300px; 
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-card h2 {
+    margin: 20px 0 10px;
+    font-size: 20px;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.product-card p {
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.actions {
+    display: flex; /* Align buttons side by side */
+    justify-content: center;
+    gap: 10px; /* Adds space between buttons */
+    margin-bottom: 20px;
+}
+
+.actions button, .actions a {
+    padding: 12px 25px;
+    border-radius: 30px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.actions button:hover, .actions a:hover {
+    background-color: #1abc9c;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.actions a {
+    background-color: white;
+    color: #3498db;
+    border: 1px solid #3498db;
+}
+
+.actions a:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+.product-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-details img {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+.product-details .info h2 {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.product-details .info p {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.product-details .info button {
+    margin-top: 20px;
+    padding: 15px 40px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-details .info button:hover {
+    background-color: #c0392b;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
